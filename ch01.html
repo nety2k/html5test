@@ -7,11 +7,16 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script>
-        var num = 0;
-        num = num + true;
+        window.onload = function () {
+            var list = '';
 
-        alert(num);
-        alert(parseInt(true));
+            list += '<ul>';
+            list += '   <li>Hello</li>';
+            list += '   <li>Javascript....</li>';
+            list += '</ul>';
+
+            document.body.innerHTML = list;
+        }
     </script>
 </head>
 
